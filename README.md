@@ -12,7 +12,7 @@ Simple 3 Tier app deployment via Terraform on the Azure Cloud. The infrastructur
 
 ### Prerequisites
 1) Have Terraform installed
-2) Logged in to you Azure account on cli via `az-cli`
+2) Logged in to your Azure account on cli via `az-cli`
 
 ### Run instructions
 To deploy the infrastructure on Azure, run the following commands:
@@ -54,7 +54,7 @@ python metadata.py name
 ```
 
 
-In a Windows vm, you can obtain all of the metadata by runnin the following command in Powershell:
+In a Windows vm, you can obtain all of the metadata by running the following command in Powershell:
 ```
 Invoke-RestMethod -Headers @{"Metadata"="true"} -Method GET -NoProxy -Uri "http://169.254.169.254/metadata/instance/compute/vmId?api-version=2017-08-01&format=text"
 ```
